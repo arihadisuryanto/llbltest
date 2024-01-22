@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--LLBLGen Pro v5.11 project file. Do not manually edit this file. Incorrect references could lead to an unloadable project file.-->
+<Project Version="5.11" TargetFrameworkName="Entity Framework Core v8" UseLegacyDefaults="false">
+  <Properties>
+    <Abbreviations />
+    <Property Name="AdditionalTaskPerformerFolder" Value="" />
+    <Property Name="AdditionalTasksFolder" Value="" />
+    <Property Name="AdditionalTemplatesFolder" Value="" />
+    <Property Name="AdditionalTypeConverterFolder" Value="" />
+    <Property Name="AddNewElementsAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AddNewFieldsAfterRefresh_v5" Value="true" />
+    <Property Name="AddNewFieldsAfterRelationalModelDataSync_v5" Value="true" />
+    <Property Name="AddNewViewsAsEntitiesAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewViewsAsEntitiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AutoAddManyToManyRelationships" Value="false" />
+    <Property Name="AutoAssignSequencesToIntegerPks" Value="true" />
+    <Property Name="AutoAssignTypeConverterToFieldMapping" Value="true" />
+    <Property Name="AutomaticallyGenerateSourceCodeOnProjectSave" Value="true" />
+    <Property Name="ConnectionStringKeyNamePattern" Value="ConnectionString.{$ProviderName}" />
+    <Property Name="DefaultDDLSQLScriptDestinationFolder" Value=".\DDLSQLScripts" />
+    <Property Name="DefaultDeleteRuleAction" Value="1" />
+    <Property Name="DefaultSourceCodeDestinationFolder" Value=".\Code" />
+    <Property Name="DefaultUpdateRuleAction" Value="0" />
+    <Property Name="DeleteObsoleteFiles" Value="true" />
+    <Property Name="ElementNamePrefixPattern" Value="{$SchemaName}" />
+    <Property Name="ElementNamePrefixPatternIsAppliedWhen" Value="1" />
+    <Property Name="EncodingToUse" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForTable" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForView" Value="4" />
+    <Property Name="EntityFieldNameStripPattern" Value="{}{}" />
+    <Property Name="EntityNameStripPattern" Value="{tbl_}{}" />
+    <Property Name="ExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="FailCodeGenerationOnWriteError" Value="false" />
+    <Property Name="FieldMappedOntoRelatedFieldPattern" Value="{$RelatedFieldName}" />
+    <Property Name="FkFieldsAreNamedAfterTargetField" Value="true" />
+    <Property Name="ForeignKeyConstraintPattern" Value="FK_{$Guid}" />
+    <Property Name="ForeignKeyFieldPattern" Value="{$NavigatorName}{$RelatedFieldName}" />
+    <Property Name="GroupUsage" Value="0" />
+    <Property Name="IdentifyingFieldsFollowDBPrimaryKeyConstraints_v5" Value="true" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseInsensitiveDBs" Value="false" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseSensitiveDBs" Value="false" />
+    <Property Name="LengthPrecisionScaleFollowDBLengthPrecisionScale_v5" Value="true" />
+    <Property Name="MakeElementNamePascalCasing" Value="true" />
+    <Property Name="NavigatorMappedOntoManyToManyPattern" Value="{$EndEntityName}CollectionVia{$IntermediateEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneManyToOnePattern" Value="{$EndEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneToManyPattern" Value="{$EndEntityName$P}" />
+    <Property Name="NonExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="PreferDecimalOverCurrencyTypes" Value="true" />
+    <Property Name="PreferNaturalCharacterTypes" Value="true" />
+    <Property Name="PreferSystemSequencesOverSchemaSequencesIfApplicable" Value="true" />
+    <Property Name="PreferVariableLengthTypes" Value="true" />
+    <Property Name="PrimaryKeyConstraintPattern" Value="PK_{$Guid}" />
+    <Property Name="ProjectCreator" Value="AH" />
+    <Property Name="ProjectName" Value="llbltest" />
+    <Property Name="ReflectNullabilityOfElementFieldInTargetField_v5" Value="false" />
+    <Property Name="ReflectTypeOfElementFieldInTargetField_v5" Value="true" />
+    <Property Name="RelationalModelDataElementNameCasingCaseInsensitiveDBs" Value="3" />
+    <Property Name="RelationalModelDataElementNameCasingCaseSensitiveDBs" Value="3" />
+    <Property Name="RelationshipsFollowDBForeignKeyConstraints_v5" Value="true" />
+    <Property Name="RemoveUnderscoresFromElementName" Value="true" />
+    <Property Name="RemoveUnmappedElementsAfterRefresh_v5" Value="false" />
+    <Property Name="RemoveUnmappedElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRefresh" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRelationalModelDataSync" Value="false" />
+    <Property Name="RetrieveDBCustomProperties" Value="false" />
+    <Property Name="RootNamespace" Value="" />
+    <Property Name="SequenceNameMatchingPattern" Value="SEQ_{$TableName}" />
+    <Property Name="SequencePattern" Value="SEQ_{$EntityName}" />
+    <Property Name="SetGroupNameAfterSchemaName" Value="true" />
+    <Property Name="SetSchemaNameAfterGroupName" Value="true" />
+    <Property Name="SingularizeElementNames" Value="true" />
+    <Property Name="StoredProcNameStripPattern" Value="{pr_, sp_}{}" />
+    <Property Name="StoreTimeLastGeneratedIntoProject" Value="false" />
+    <Property Name="StoreTimeLastSyncIntoProject" Value="true" />
+    <Property Name="SyncCustomFieldOrderingWithTableFieldIndex" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="SyncRelationalModelDataElementNameWithModelElementName_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="TableValuedFunctionNameStripPattern" Value="{fn_, pr_, sp_}{}" />
+    <Property Name="TargetPerEntityEdgesRequireBackingFkConstraint" Value="true" />
+    <Property Name="TypedViewFieldNameStripPattern" Value="{}{}" />
+    <Property Name="TypedViewMappedOnResultsetPattern" Value="{$ProcFunctionName}{$ResultsetName}Result" />
+    <Property Name="TypedViewNameStripPattern" Value="{vw_}{}" />
+    <Property Name="UniqueConstraintPattern" Value="UC_{$Guid}" />
+    <Property Name="UniqueConstraintsFollowDBUniqueConstraints_v5" Value="true" />
+    <Property Name="UpdateCustomPropertiesAfterRefresh_v5" Value="false" />
+    <Property Name="UpdateCustomPropertiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="UseCustomFieldOrderingOnNewElements" Value="false" />
+  </Properties>
+  <TypeShortcuts />
+  <IgnoredWarnings />
+  <SavedSearchQueries />
+  <CodeGenerationCyclePreferences>
+    <OutputType Value="3">
+      <LastUsedPreferences>
+        <DestinationRootFolder Value=".\Code" />
+        <FrameworkName Value="Entity Framework Core v8" />
+        <LanguageName Value="C#" />
+        <PlatformName Value=".NET 8" />
+        <PresetName Value="SD.EntityFramework.Core v8" />
+        <RootNamespace Value="llbltest" />
+        <TemplateGroup Value="General" />
+        <TemplateBindings>
+          <Binding Name="SD.EntityFramework.Core.v8.SqlServer" />
+          <Binding Name="SD.EntityFramework.Core v8" />
+          <Binding Name="SD.EntityFramework.NET8" />
+          <Binding Name="SD.EntityFramework.Shared" />
+        </TemplateBindings>
+        <AdhocTemplateSets />
+      </LastUsedPreferences>
+    </OutputType>
+  </CodeGenerationCyclePreferences>
+  <OutputSettingValues>
+    <SettingValues>
+      <SettingValue Name="1:CollectionNavigatorTypeDefault" Value="List&lt;T&gt;" Type="18" />
+      <SettingValue Name="1:EmitForeignKeyFields" Value="true" Type="3" />
+      <SettingValue Name="1:EntityBaseClassNameDefault" Value="CommonEntityBase" Type="18" />
+      <SettingValue Name="1:GenerateAsVirtualPropertyDefault" Value="true" Type="3" />
+      <SettingValue Name="1:GenerateDbContextOptionsCtorInDbContext" Value="true" Type="3" />
+      <SettingValue Name="1:GenerateReadOnlyFieldsAsReadOnlyProperties" Value="true" Type="3" />
+      <SettingValue Name="1:MapUnmappedFieldsAsShadowPropertiesDefault" Value="false" Type="3" />
+      <SettingValue Name="1:SupportedActionCombinations" Value="0,4" Type="18" />
+      <SettingValue Name="1:SupportsKeyLessEntities" Value="true" Type="3" />
+      <SettingValue Name="1:SupportsManyToManyRelationships" Value="true" Type="3" />
+      <SettingValue Name="1:SupportsRequiredValueTypes" Value="true" Type="3" />
+      <SettingValue Name="1:SupportsSingleSidedMtoMRelationships" Value="true" Type="3" />
+      <SettingValue Name="1:SupportsTemporalTables" Value="true" Type="3" />
+      <SettingValue Name="1:SupportsTPEInheritance" Value="true" Type="3" />
+      <SettingValue Name="1:SupportsTPTDifferentPkTargetNames" Value="true" Type="3" />
+      <SettingValue Name="1:UseNullableReferenceTypes" Value="true" Type="3" />
+      <SettingValue Name="1:UsePrivateBackingFieldDefault" Value="false" Type="3" />
+      <SettingValue Name="1:ValueTypeBaseClassNameDefault" Value="CommonValueTypeBase" Type="18" />
+    </SettingValues>
+  </OutputSettingValues>
+  <CodeGenerationMetaDataDefaults />
+  <EntityModel>
+    <ValueTypeDefinitions />
+    <EntityDefinitions>
+      <EntityDefinition Name="Dealer" ObjectID="197d63b8-04d1-45a2-a87b-c216c7d8c774">
+        <Fields>
+          <Field Name="DealerName" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="OwnerId" Type="int" IsOptional="true" Precision="10" IsAutoCreated="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Owner" ObjectID="879dcdf0-88df-4c41-ba24-ca1dfcc87024">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="OwnerName" Type="string" IsOptional="true" MaxLength="50" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Penjualan" ObjectID="78d42759-c45d-4f98-bc1f-fff36a10e487">
+        <Fields>
+          <Field Name="CustomerId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="TransactionDate" Type="datetime" IsOptional="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Salesman" ObjectID="34fd6028-cc58-4ba1-8d4c-f31d94c96465">
+        <Fields>
+          <Field Name="DealerId" Type="int" Precision="10" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="SalesName" Type="string" IsOptional="true" MaxLength="50" />
+        </Fields>
+      </EntityDefinition>
+    </EntityDefinitions>
+    <Relationships>
+      <NormalRelationship Name="Dealer.Owner-Owner.Dealers" Start=":Dealer" End=":Owner" StartNavigator="Owner" EndNavigator="Dealers" Type="1">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="OwnerId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Salesman.Dealer-Dealer.Salesmen" Start=":Salesman" End=":Dealer" StartNavigator="Dealer" EndNavigator="Salesmen" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="DealerId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+    </Relationships>
+    <InheritanceHierarchies />
+  </EntityModel>
+  <TargetDatabases>
+    <TargetDatabase Type="2D18D138-1DD2-467E-86CC-4838250611AE" SyncSource="2">
+      <ConnectionElements>
+        <ConnectionElement Name="ServerName" Value="(LocalDb)\MSSQLLocalDB" />
+        <ConnectionElement Name="CatalogName" Value="master" />
+        <ConnectionElement Name="UserID" Value="sa" />
+        <ConnectionElement Name="Password" Value="" />
+      </ConnectionElements>
+      <SystemSequences>
+        <Sequence Name="SCOPE_IDENTITY()" />
+        <Sequence Name="@@IDENTITY" />
+      </SystemSequences>
+      <Catalogs>
+        <Catalog Name="TestDB">
+          <Schemas>
+            <Schema Name="dbo" SyncSource="2" LastSyncWithDatabase="2024-01-22T01:35:44.0698081Z">
+              <Tables>
+                <Table Name="Dealer">
+                  <PkConstraintName Name="PK_Dealer" />
+                  <Fields>
+                    <Field Name="ID" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="DealerName" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="OwnerID" Ordinal="3" IsOptional="true" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="Owner">
+                  <PkConstraintName Name="PK_Owner" />
+                  <Fields>
+                    <Field Name="ID" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="OwnerName" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                  </Fields>
+                </Table>
+                <Table Name="Penjualan">
+                  <PkConstraintName Name="PK_Penjualan" />
+                  <Fields>
+                    <Field Name="ID" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="CustomerID" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="TransactionDate" Ordinal="3" IsOptional="true" DbType="4" />
+                  </Fields>
+                </Table>
+                <Table Name="Salesman">
+                  <PkConstraintName Name="PK_Salesman" />
+                  <Fields>
+                    <Field Name="ID" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="SalesName" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="DealerID" Ordinal="3" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+              </Tables>
+            </Schema>
+          </Schemas>
+          <ForeignKeyConstraints>
+            <ForeignKeyConstraint Name="dbo:Dealer:FK_OwnerID_Owner">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Owner:ID" FkField="dbo:Dealer:OwnerID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Salesman:FK_DealerID_Dealer">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Dealer:ID" FkField="dbo:Salesman:DealerID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+          </ForeignKeyConstraints>
+        </Catalog>
+      </Catalogs>
+    </TargetDatabase>
+  </TargetDatabases>
+  <MappingStores>
+    <MappingStore Type="2D18D138-1DD2-467E-86CC-4838250611AE">
+      <EntityMappings>
+        <EntityMapping EntityName=":Dealer" TargetName="TestDB:dbo:Dealer">
+          <FieldMappings>
+            <FieldMapping FieldName="DealerName" TargetFieldName="DealerName" />
+            <FieldMapping FieldName="Id" TargetFieldName="ID" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="OwnerId" TargetFieldName="OwnerID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Owner" TargetName="TestDB:dbo:Owner">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="ID" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="OwnerName" TargetFieldName="OwnerName" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Penjualan" TargetName="TestDB:dbo:Penjualan">
+          <FieldMappings>
+            <FieldMapping FieldName="CustomerId" TargetFieldName="CustomerID" />
+            <FieldMapping FieldName="Id" TargetFieldName="ID" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="TransactionDate" TargetFieldName="TransactionDate" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Salesman" TargetName="TestDB:dbo:Salesman">
+          <FieldMappings>
+            <FieldMapping FieldName="DealerId" TargetFieldName="DealerID" />
+            <FieldMapping FieldName="Id" TargetFieldName="ID" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="SalesName" TargetFieldName="SalesName" />
+          </FieldMappings>
+        </EntityMapping>
+      </EntityMappings>
+      <TypedViewMappings />
+      <SPCallMappings />
+      <TvfCallMappings />
+      <TypeConversionDefinitions />
+    </MappingStore>
+  </MappingStores>
+  <ModelViews />
+</Project>
