@@ -1,0 +1,60 @@
+﻿@page
+@model llbltest.UI.Pages.Dealer.IndexModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consume Web API</title>
+     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-main.css" />
+    <script src="https://kendo.cdn.telerik.com/2023.3.1114/mjs/kendo.grid.js" type="module"></script> <!-- Include the Grid module. The rest of the dependencies required by the Grid will be loaded automatically. -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    @* <script src="https://kendo.cdn.telerik.com/2023.3.1114/js/kendo.all.min.js"></script> *@
+</head>
+<body>
+
+    <h2>Web API Data</h2>
+
+    <div id="apiDataGrid"></div>
+
+    <script>
+        $(document).ready(function () {
+            debugger;
+            var baseURL = "https://localhost:44330"
+            // Call the Web API on page load
+            fetchData();
+
+            function fetchData() {
+                $.ajax({
+                    url: baseURL + '/Dealers',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        displayData(data);
+                    },
+                    error: function (error) {
+                        console.log('Error:', error);
+                    }
+                });
+            }
+
+            function displayData(data) {
+                // Display the data in a Kendo UI Grid
+                $("#apiDataGrid").kendoGrid({
+                    dataSource: {
+                        data: data,
+                        pageSize: 10 // Set the desired page size
+                    },
+                    columns: [
+                        { field: "id", title: "Id" },
+                        { field: "dealerName", title: "Dealer Name" }
+                    ],
+                    pageable: true
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

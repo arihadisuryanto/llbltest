@@ -11,10 +11,12 @@ namespace llbltest.API.Controllers
     {
         private readonly IDealerService _dealerService;
         private readonly IMapper _mapperConfig;
-        public DealerController(IDealerService dealerService, IMapper mapperConfig) 
+        private readonly IConfiguration _configuration;   
+        public DealerController(IDealerService dealerService, IMapper mapperConfig, IConfiguration configuration) 
         { 
             _dealerService = dealerService;
             _mapperConfig = mapperConfig;
+            _configuration = configuration;
         }
 
         [HttpGet("Dealers")]
@@ -41,7 +43,7 @@ namespace llbltest.API.Controllers
         }
 
         [HttpPost("AddDealer")]
-        public async Task<IActionResult> AddDealer(DealerDto dealerDto)
+        public async Task<IActionResult> AddDealer([FromForm]DealerDto dealerDto)
         {
             try
             {
@@ -49,7 +51,7 @@ namespace llbltest.API.Controllers
 
                 if (dealerEntity is not null)
                 {
-                    var result = await _dealerService.AddDealerAsync(dealerEntity);
+                    var result = await _dealerService.AddDealerAsync(dealerEntity, dealerDto.Attachment);
                     return Ok(result);
                 }
                 else
@@ -93,6 +95,24 @@ namespace llbltest.API.Controllers
             {
                 var result = await _dealerService.DeleteDealerAsync(id);
                 return Ok(result);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet("DownloadDealerAttachment")]
+        public async Task<IActionResult> DownloadDealerAttachment(int id)
+        {
+            try
+            {
+                var result = await _dealerService.DownloadAttachmentDealerAsync(id);
+                if (result.Item1 != null)
+                {
+                    return File(result.Item1, result.Item2);
+                }
+                return NotFound();
             }
             catch (Exception)
             {

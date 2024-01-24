@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "llbltest.Persistence", "Cod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "llbltest.API", "llbltest.API\llbltest.API.csproj", "{3CE1DDA8-811E-4C3B-B585-DC030E43DF72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "llbltest.UI", "llbltest.UI\llbltest.UI.csproj", "{7BC84711-A689-49EF-B9F5-CEB6A05BA8BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "llbltest.UI", "llbltest.UI\llbltest.UI.csproj", "{7BC84711-A689-49EF-B9F5-CEB6A05BA8BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

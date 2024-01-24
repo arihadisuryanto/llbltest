@@ -27,8 +27,8 @@ namespace llbltest.EntityClasses
 		public System.Int32 Id => _id;
 		/// <summary>Gets or sets the OwnerId field. </summary>
 		public Nullable<System.Int32> OwnerId { get; set; }
-		/// <summary>Represents the navigator which is mapped onto the association 'Dealer.Owner - Owner.Dealers (1:1) (Model only)'</summary>
-		public virtual Owner Owner { get; set; } = null!;
+		/// <summary>Represents the navigator which is mapped onto the association 'Dealer.Owner - Owner.Dealers (m:1)'</summary>
+		public virtual Owner? Owner { get; set; }
 		/// <summary>Represents the navigator which is mapped onto the association 'Salesman.Dealer - Dealer.Salesmen (m:1)'</summary>
 		public virtual List<Salesman> Salesmen { get; set; }
 	}

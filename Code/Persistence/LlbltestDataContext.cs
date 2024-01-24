@@ -53,6 +53,8 @@ namespace llbltest
 			}
 		}
 
+		/// <summary>Gets an object query for the entity set 'Attachment', containing entity type 'Attachment'</summary>
+		public DbSet<Attachment> Attachments { get; set; } 
 		/// <summary>Gets an object query for the entity set 'Dealer', containing entity type 'Dealer'</summary>
 		public DbSet<Dealer> Dealers { get; set; } 
 		/// <summary>Gets an object query for the entity set 'Owner', containing entity type 'Owner'</summary>

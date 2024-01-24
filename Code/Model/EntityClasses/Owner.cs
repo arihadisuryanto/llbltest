@@ -17,6 +17,7 @@ namespace llbltest.EntityClasses
 		/// <summary>Initializes a new instance of the <see cref="Owner"/> class.</summary>
 		public Owner() : base()
 		{
+			this.Dealers = new List<Dealer>();
 			OnCreated();
 		}
 
@@ -24,7 +25,7 @@ namespace llbltest.EntityClasses
 		public System.Int32 Id => _id;
 		/// <summary>Gets or sets the OwnerName field. </summary>
 		public System.String? OwnerName { get; set; }
-		/// <summary>Represents the navigator which is mapped onto the association 'Dealer.Owner - Owner.Dealers (1:1) (Model only)'</summary>
-		public virtual Dealer Dealers { get; set; } = null!;
+		/// <summary>Represents the navigator which is mapped onto the association 'Dealer.Owner - Owner.Dealers (m:1)'</summary>
+		public virtual List<Dealer> Dealers { get; set; }
 	}
 }
